@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+:root {
+  font-size: 16px;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+.header__title,
+ul,
+h7, h8, h9, h10, h11 {
+  text-transform: capitalize;
+  font-family: "Honk", "Bungee Spice", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 28px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-style: unset;
+  background-image: url("background image.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  line-height: 1.6;
+}
+
+.honk-custom-styling {
+  font-family: "Honk", "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  font-style: normal;
+  text-transform: capitalize;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 0.875rem;
+  }
+
+  .honk-custom-styling {
+    font-size: 1.75rem;
+  }
+
+  .header__title {
+    font-size: 2rem;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #e74c3c;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+li a:hover {
+  color: #3498db;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-bottom: 2px solid #e74c3c;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.header__logo img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.header__title {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+nav {
+  background-color: transparent;
+}
+
+
+/* Hero Section Styling */
+section.container:first-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("css/Hero section.png") center/cover;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+section.container:first-child h2 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+section.container:first-child p {
+  color: #ecf0f1;
+  font-size: 1.2rem;
+}
+
+section.container:first-child .cta-button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+section.container:first-child .cta-button:hover {
+  background-color: #3498db;
+}
+
+/* About Section Styling */
+section.container:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("css/Group 5.png") center/cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: #ecf0f1;
+}
+
+section.container:nth-child(2) h3 {
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+section.container:nth-child(2) p {
+  margin-bottom: 20px;
+}
+
+section.container:nth-child(2) .feature-item {
+  border: 2px solid #e74c3c;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Games Galore Styling */
+section.container:nth-child(3) {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("css/4.png") center/cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: #ecf0f1;
+}
+
+section.container:nth-child(3) h4 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+/* AI Awareness Styling */
+section.container:nth-child(4) {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("css/2.png") center/cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: #ecf0f1;
+}
+
+
+section.container:nth-child(4) h5 {
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+section.container:nth-child(4) .ai-info {
+  max-width: 60%;
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("background image.png") center/cover;
+  color: #ecf0f1;
+  padding: 50px 20px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__section {
+  flex: 1;
+}
+
+.footer__section h4 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.footer__section p {
+  margin-bottom: 20px;
+}
+
+.socials-section {
+  flex: 1;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links li {
+  margin-right: 20px;
+}
+
+.social-links a {
+  color: #e74c3c;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+.footer__copyright {
+  flex: 1;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .socials-section {
+    margin-top: 20px;
+  }
+
+  .footer__copyright {
+    margin-top: 20px;
+  }
+}
+
+
+/* Tokenomics Styling */
+.tokenomics-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("background image.png") center/cover;
+  text-align: center;
+  padding: 40px 0;
+  color: #ecf0f1;
+}
+
+.tokenomics-container h2 {
+  color: #333;
+}
+
+.tokenomics-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tokenomics-item {
+  flex: 0 1 calc(50% - 20px);
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tokenomics-item strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .tokenomics-item {
+    flex: 0 1 100%;
+  }
+}
+
+/* Join The Pack Styling */
+section.container:last-child {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("background image.png") center/cover;
+  text-align: center;
+  padding: 100px 20px;
+  color: #ecf0f1;
+}
+
+section.container:last-child h6 {
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+section.container:last-child p {
+  margin-bottom: 20px;
+}
+
+/* Additional Styling for Mobile Compatibility */
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .container h4,
+  .container h5,
+  .container h6 {
+    font-size: 1.5rem;
+  }
+
+  .container .content {
+    max-width: 100%;
+  }
+
+  .container .content p {
+    margin-bottom: 10px;
+  }
+
+  section.container:first-child,
+  section.container:nth-child(2),
+  section.container:nth-child(3),
+  section.container:nth-child(4),
+  section.container:last-child {
+    padding: 50px 20px;
+  }
+}
+
+
+
